@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '8%n6gs-ak2*wd_12+b11lpt_d#0@*g=d+6h#kq9gifftquu)yv'
+SECRET_KEY = 'add_secret'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -148,8 +148,8 @@ AUTHENTICATION_BACKENDS = [
     'social_core.backends.google.GoogleOAuth2',
 ]
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '942949517663-ut8l60p8gjvh266puvhi4n6q1lbe5hgl.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '4L9nNruhWcj7BQ9PPdXg8WR7'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'add_key'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'add_secret'
 
 ABSOLUTE_URL_OVERRIDES = {
     'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])
